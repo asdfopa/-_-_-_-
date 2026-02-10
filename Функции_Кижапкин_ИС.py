@@ -39,10 +39,13 @@
 
 
 single_digits = [0,1,2,3,4,5,6,7,8,9]
-squares = []
+squares = [namber**2 for namber in single_digits]
 for namber in single_digits:
-    squares = [namber**2 for namber in single_digits]
+    print(namber)
 print(squares)
+cubes = [namber**3 for namber in single_digits]
+print(cubes) #Задание 6
+
 
 
 

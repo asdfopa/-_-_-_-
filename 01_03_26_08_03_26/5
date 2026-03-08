@@ -1,0 +1,9 @@
+table = [
+    [2, 7, 6],
+    [9, 5, 1],
+    [4, 3, 8]
+]
+summa = table[0][0] + table[1][0] + table[2][0]
+if table[0][1] + table[1][1] + table[2][1] == summa and table[0][2] + table[1][2] + table[2][2] == summa and table[0][0] + table[0][1] + table[0][2] == summa and table[1][0] + table[1][1] + table[1][2] == summa and table[2][0] + table[2][1] + table[2][2] == summa and table[0][0] + table[1][1] + table[2][2] == summa and table[2][0] + table[1][1] + table[0][2] == summa:
+    print('Это и правда магический квадрат!')
+else: print('Это не магический квадрат')

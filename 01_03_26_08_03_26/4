@@ -1,0 +1,99 @@
+stroka = input('Введите строку, которую хотите преобразовать:\n'
+               ' ')
+morze = ''
+for simvol in stroka:
+    if simvol == ' ':
+        morze += ' '
+    elif simvol == ',':
+        morze += '--..--'
+    elif simvol == '.':
+        morze += '.-.-.-'
+    elif simvol == '?':
+        morze += '..--..'
+    elif simvol == '0':
+        morze += '-----'
+    elif simvol == '1':
+        morze += '.----'
+    elif simvol == '2':
+        morze += '..---'
+    elif simvol == '3':
+        morze += '...--'
+    elif simvol == '4':
+        morze += '....-'
+    elif simvol == '5':
+        morze += '.....'
+    elif simvol == '6':
+        morze += '-....'
+    elif simvol == '7':
+        morze += '--...'
+    elif simvol == '8':
+        morze += '---..'
+    elif simvol == '9':
+        morze += '----.'
+    elif simvol == 'A' or simvol == 'a' or simvol == 'А' or simvol == 'а':
+        morze += '.-'
+    elif simvol == 'B' or simvol == 'b' or simvol == 'Б' or simvol == 'б':
+        morze += '-...'
+    elif simvol == 'C' or simvol == 'c' or simvol == 'Ц' or simvol == 'ц':
+        morze += '-.-.'
+    elif simvol == 'D' or simvol == 'd' or simvol == 'Д' or simvol == 'д':
+        morze += '-..'
+    elif simvol == 'E' or simvol == 'e' or simvol == 'Е' or simvol == 'е' or simvol == 'Ё' or simvol == 'ё':
+        morze += '.'
+    elif simvol == 'F' or simvol == 'f' or simvol == 'Ф' or simvol == 'ф':
+        morze += '..-.'
+    elif simvol == 'G' or simvol == 'g' or simvol == 'Г' or simvol == 'г':
+        morze += '--.'
+    elif simvol == 'H' or simvol == 'h' or simvol == 'Х' or simvol == 'х':
+        morze += '....'
+    elif simvol == 'I' or simvol == 'i' or simvol == 'И' or simvol == 'и':
+        morze += '..'
+    elif simvol == 'J' or simvol == 'j' or simvol == 'Й' or simvol == 'й':
+        morze += '.---'
+    elif simvol == 'K' or simvol == 'k' or simvol == 'К' or simvol == 'к' or simvol == 'Y' or simvol == 'y':
+        morze += '-.-'
+    elif simvol == 'L' or simvol == 'l' or simvol == 'Л' or simvol == 'л':
+        morze += '.-..'
+    elif simvol == 'M' or simvol == 'm' or simvol == 'М' or simvol == 'м':
+        morze += '--'
+    elif simvol == 'N' or simvol == 'n' or simvol == 'Н' or simvol == 'н':
+        morze += '-.'
+    elif simvol == 'O' or simvol == 'o' or simvol == 'О' or simvol == 'о':
+        morze += '---'
+    elif simvol == 'P' or simvol == 'p' or simvol == 'П' or simvol == 'п':
+        morze += '.--.'
+    elif simvol == 'Q' or simvol == 'q' or simvol == 'Щ' or simvol == 'щ':
+        morze += '--.-'
+    elif simvol == 'R' or simvol == 'r' or simvol == 'Р' or simvol == 'р':
+        morze += '.-.'
+    elif simvol == 'S' or simvol == 's' or simvol == 'С' or simvol == 'с':
+        morze += '...'
+    elif simvol == 'T' or simvol == 't' or simvol == 'Т' or simvol == 'т':
+        morze += '-'
+    elif simvol == 'U' or simvol == 'u' or simvol == 'У' or simvol == 'у':
+        morze += '..-'
+    elif simvol == 'V' or simvol == 'v' or simvol == 'Ж' or simvol == 'ж':
+        morze += '...-'
+    elif simvol == 'W' or simvol == 'w' or simvol == 'В' or simvol == 'в':
+        morze += '.--'
+    elif simvol == 'X' or simvol == 'x' or simvol == 'Ь' or simvol == 'ь':
+        morze += '-..-'
+    elif simvol == 'Z' or simvol == 'z' or simvol == 'З' or simvol == 'з':
+        morze += '--..'
+    elif simvol == 'Ч' or simvol == 'ч':
+        morze += '---.'
+    elif simvol == 'Ш' or simvol == 'ш':
+        morze += '----'
+    elif simvol == 'Ъ' or simvol == 'ъ':
+        morze += '.--.-.'
+    elif simvol == 'Ы' or simvol == 'ы':
+        morze += '-.---'
+    elif simvol == 'Э' or simvol == 'э':
+        morze += '..-..'
+    elif simvol == 'Ю' or simvol == 'ю':
+        morze += '..--'
+    elif simvol == 'Я' or simvol == 'я':
+        morze += '.-.-'
+    else: print('Вы ввели символ, которого нет в азбуке.\n'
+     'Символы, которые Вы можете использовать: английский алфавит, русский алфавит, числа от 0 до 9 и знаки . , ?')
+print(morze)

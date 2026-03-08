@@ -1,0 +1,149 @@
+"""#Задание 1
+f = lambda contains: 'a' in contains
+print(f(input()))
+
+#Задание 2
+chek = 12
+s = lambda long_string: len(long_string) > 12
+print(s(input()))
+
+#Задание 3
+f = lambda end_in_a: end_in_a[-1] == 'a'
+print(f(input()))
+
+#Задание 4
+even_or_odd = lambda num: 'четное' if int(num)%2==0 else 'нечетное'
+print(even_or_odd(input()))
+
+#Задание 5
+multiple_of_three = lambda num: 'кратно трем' if int(num) % 3 == 0 else 'не кратное'
+print(multiple_of_three(input()))
+
+#Задание 6
+print('Обязательно введите рейтинг полностью, например, 8.0')
+rate_movie = lambda rating: 'Мне нравится этот фильм' if float(rating) > 8.5 else 'Этот фильм был не очень хорошим'
+print(rate_movie(input()))"""
+
+
+
+
+#Рекурсивные функции
+"""def fact(n):
+    x=1
+    for n in range(1, n+1):
+        x = x*n
+    return x
+    
+def rec_fact(l):
+    if l == 1:
+        return 1
+    return l*rec_fact(l-1)"""
+
+"""spisok = [1,2,3,4,5,6,7,8,9]
+
+def sq():
+    new_spisok = []
+    for i in spisok:
+        new_spisok.append(i**2)
+    return new_spisok
+print(sq())"""
+
+#Функции Задание 1 
+"""tables = {
+    1: ['Jiho', False],
+    2: [1],
+    3: [1],
+    4: [1],
+    5: [1],
+    6: [1],
+    7: [1],
+}
+
+def assign_table(table_number, name, vip_status):
+    tables[table_number] = [name, vip_status]
+
+assign_table(6, 'Yoni', False)
+
+def assign_table(table_number, name, vip_status=False):
+    tables[table_number] = [name, vip_status]
+
+assign_table(4, 'Карла')
+
+print("Итоговая рассадка")
+print(tables)
+print()"""
+
+#Задание 2
+"""def print_order(*items):
+    print("Заказаны товары:", items)
+
+print("Вывод заказа")
+print_order('Orange Juice', 'Apple Juice', 'Scrambled Eggs', 'Pancakes')
+print()"""
+
+#Задание 3
+"""tables = {
+    1: {'name': 'Jiho', 'vip_status': False, 'order': 'Orange Juice, Apple Juice'},
+    2: {},
+    3: {},
+    4: {},
+    5: {},
+    6: {},
+    7: {},
+}
+
+def assign_table(table_number, name, vip_status=False):
+    tables[table_number] = {'name': name, 'vip_status': vip_status, 'order': []}
+
+def assign_and_print_order(table_number, *order_items):
+    tables[table_number]['order'] = order_items
+    print(f"Заказ для стола {table_number}:")
+    for item in order_items:
+        print(item)
+
+assign_table(2, 'Arwa', True)
+
+print("Добавление заказа")
+assign_and_print_order(2, 'Стейк', 'Морской окунь', 'Бутылка вина')
+print("Обновлённый словарь tables:")
+print(tables)
+print()"""
+
+#Задание 4
+"""tables = {
+    1: {
+        'name': 'Chioma',
+        'vip_status': False,
+        'order': {
+            'drinks': 'Orange Juice, Apple Juice',
+            'food_items': 'Pancakes'
+        }
+    },
+    2: {},
+    3: {},
+    4: {},
+    5: {},
+    6: {},
+    7: {},
+}
+
+def assign_food_items(**order_items):
+    food = order_items.get('food')
+    drinks = order_items.get('drinks')
+    print("Извлечение food и drinks")
+    print("Food:", food)
+    print("Drinks:", drinks)
+
+assign_food_items(food='Pancakes, Poached Egg', drinks='Water')
+print()"""
+
+#Задание 5 
+def calculate_price_per_person(total, tip, split):
+    total_tip = total * (tip / 100)
+    split_price = (total + total_tip) / split
+    print(split_price)
+
+table_7_total = [534.50, 20.0, 5]
+
+print("Расчёт стоимости на человека")
+calculate_price_per_person(*table_7_total)
